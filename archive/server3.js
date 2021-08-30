@@ -50,7 +50,6 @@ app.delete('/campsites/:campsiteId', (req, res) => {
     res.end(`Deleting campsite: ${req.params.campsiteId}`);
 });
 
-
 app.use(express.static(__dirname + '/public'));
 
 app.use((req, res) => {
